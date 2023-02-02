@@ -1,0 +1,4 @@
+-----------------------------------------------------------------
+ Broadcast type:  	 SONGS 	  Duration: 1 	  Song Name: 1 	  Singer Name: 1 	  Commercial Type: NONCOMMERCIAL
+-----------------------------------------------------------------
+Total income: 0 euro

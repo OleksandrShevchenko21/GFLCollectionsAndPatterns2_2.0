@@ -1,0 +1,6 @@
+name: John
+type: STAFF
+experience: 2
+------LIST of broadcasts----
+ Broadcast type:  	 SONGS 	  Duration: 1 	  Song Name: SONG 	  Singer Name: SINGER 	  Commercial Type: NONCOMMERCIAL
+ Broadcast type: ADVERTISE 	  Duration: 2 	  Advertise Name: ADVERTISE 	  Price: 5 	  Commercial Type: COMMERCIAL

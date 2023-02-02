@@ -22,8 +22,8 @@ public class InterviewBuilderIMpl implements BroadcastProductBuilder {
     @Override
     public BroadcastProductBuilder setDuration() {
         System.out.println("Enter duration in minutes: ");
-        broadcastProduct.setDuration(Integer.parseInt(new Scanner(System.in).nextLine()));
-//        broadcastProduct.setDuration(3);
+//        broadcastProduct.setDuration(Integer.parseInt(new Scanner(System.in).nextLine()));
+        broadcastProduct.setDuration(3);
         return this;
     }
 
@@ -46,8 +46,8 @@ public class InterviewBuilderIMpl implements BroadcastProductBuilder {
     @Override
     public BroadcastProductBuilder setInterviewGuestName() {
         System.out.println("Enter interview guest name: ");
-        broadcastProduct.setInterviewGuestName(new Scanner(System.in).nextLine());
-//        broadcastProduct.setAdvertiseName("INTERVIEW");
+//        broadcastProduct.setInterviewGuestName(new Scanner(System.in).nextLine());
+        broadcastProduct.setAdvertiseName("INTERVIEW");
         return this;
     }
 
@@ -67,8 +67,8 @@ public class InterviewBuilderIMpl implements BroadcastProductBuilder {
 @Override
 public BroadcastProductBuilder setRadioPresenter() {
     System.out.println("Enter radio presenter name: ");
-    broadcastProduct.setRadioPresenterNameBroadcast("John");
-    broadcastProduct.setRadioPresenterNameBroadcast(new Scanner(System.in).nextLine());
+    broadcastProduct.setRadioPresenterNameBroadcast("Max");
+//    broadcastProduct.setRadioPresenterNameBroadcast(new Scanner(System.in).nextLine());
     return this;
 }
 

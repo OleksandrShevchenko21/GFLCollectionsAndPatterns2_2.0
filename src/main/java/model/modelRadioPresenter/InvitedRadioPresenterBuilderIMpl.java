@@ -18,8 +18,8 @@ public class InvitedRadioPresenterBuilderIMpl implements RadioPresenterBuilder {
     @Override
     public RadioPresenterBuilder setRadioPresenterName() {
         System.out.println("Enter a name of Radio Presenter: ");
-        radioPresenter.setRadioPresenterName(new Scanner(System.in).nextLine());
-//        radioPresenter.setRadioPresenterName("Max");
+//        radioPresenter.setRadioPresenterName(new Scanner(System.in).nextLine());
+        radioPresenter.setRadioPresenterName("Max");
         return this;
 
     }

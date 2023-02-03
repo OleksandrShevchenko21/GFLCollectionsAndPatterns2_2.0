@@ -98,7 +98,6 @@ public class RadioPresenterForFilter implements RadioPresenterActions {
 
         for (RadioPresenter r : presenterList) {
             Map<RadioPresenter, List<BroadcastProduct>> hashMap = new HashMap<>();
-            if (r.getRadioPresenterType() == RadioPresenterType.STAFF) {
 
                 List<BroadcastProduct> streamList1 = new ArrayList<>();
 
@@ -110,10 +109,7 @@ public class RadioPresenterForFilter implements RadioPresenterActions {
                 }
                 newStreamList = streamList1;
                 hashMap.put(r, newStreamList);
-            } else {
-                hashMap.put(r, null);
 
-            }
             newHashMap.putAll(hashMap);
 
         }

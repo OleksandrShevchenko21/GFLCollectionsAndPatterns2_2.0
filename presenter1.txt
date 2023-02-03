@@ -1,6 +1,0 @@
-name: 1
-type: STAFF
-experience: 1
-------LIST of broadcasts----
- Broadcast type:  	 SONGS 	  Duration: 2 	  Song Name: 3 	  Singer Name: 1 	  Commercial Type: NONCOMMERCIAL
- Broadcast type: ADVERTISE 	  Duration: 1 	  Advertise Name: 1 	  Price: 5 	  Commercial Type: COMMERCIAL

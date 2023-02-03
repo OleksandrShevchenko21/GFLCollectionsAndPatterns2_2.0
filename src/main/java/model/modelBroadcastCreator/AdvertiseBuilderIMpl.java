@@ -9,7 +9,7 @@ import java.util.Scanner;
 @NoArgsConstructor
 public class AdvertiseBuilderIMpl implements BroadcastProductBuilder {
 
-    BroadcastProduct broadcastProduct = new BroadcastProduct();
+    AdvertiseProduct broadcastProduct = new AdvertiseProduct();
 
     @Override
     public BroadcastProductBuilder setBroadcastType() {
@@ -73,17 +73,7 @@ public BroadcastProductBuilder setRadioPresenter() {
 }
 
     @Override
-    public BroadcastProduct build() {
+    public AdvertiseProduct build() {
         return broadcastProduct;
-    }
-
-    @Override
-    public String toString() {
-        return " Broadcast type" + ": " + broadcastProduct.getBroadcastType() + " \t " +
-                " Duration" + ": " + broadcastProduct.getDuration() + " \t " +
-                " Advertise Name" + ": " + broadcastProduct.getAdvertiseName() + " \t " +
-                " Price" + ": " + broadcastProduct.getPrice() + " \t " +
-                " Commercial Type" + ": " + broadcastProduct.getCommercialType();
-
     }
 }

@@ -11,7 +11,7 @@ import java.util.Scanner;
 @NoArgsConstructor
 public class InterviewBuilderIMpl implements BroadcastProductBuilder {
 
-    BroadcastProduct broadcastProduct = new BroadcastProduct();
+    InterviewProduct broadcastProduct = new InterviewProduct();
 
     @Override
     public BroadcastProductBuilder setBroadcastType() {
@@ -72,16 +72,8 @@ public BroadcastProductBuilder setRadioPresenter() {
 }
 
     @Override
-    public BroadcastProduct build() {
+    public InterviewProduct build() {
         return broadcastProduct;
     }
 
-    @Override
-    public String toString() {
-        return " Broadcast type" + ": " + broadcastProduct.getBroadcastType() + " \t " +
-                " Duration" + ": " + broadcastProduct.getDuration() + " \t " +
-                " Interview guest name" + ": " + broadcastProduct.getInterviewGuestName() + " \t " +
-                " Price" + ": " + broadcastProduct.getPrice() + " \t " +
-                " Commercial Type" + ": " + broadcastProduct.getCommercialType();
-    }
 }

@@ -9,11 +9,12 @@ import java.util.Scanner;
 @NoArgsConstructor
 public class SongBuilderIMpl implements BroadcastProductBuilder {
 
-    BroadcastProduct broadcastProduct = new BroadcastProduct();
+    SongProduct broadcastProduct = new SongProduct();
 
     @Override
     public BroadcastProductBuilder setBroadcastType() {
         broadcastProduct.setBroadcastType(BroadcastType.SONGS);
+
         return this;
     }
 
@@ -72,17 +73,8 @@ public class SongBuilderIMpl implements BroadcastProductBuilder {
         return this;
     }
     @Override
-    public BroadcastProduct build() {
+    public SongProduct build() {
         return broadcastProduct;
-    }
-    @Override
-    public String toString() {
-        return " Broadcast type"  + ": " + broadcastProduct.getBroadcastType() + " \t " +
-                " Duration"  + ": " + broadcastProduct.getDuration() + " \t " +
-                " Advertise Name" + ": " + broadcastProduct.getAdvertiseName() + " \t " +
-                " Price" + ": " + broadcastProduct.getPrice() + " \t " +
-                " Commercial Type" + ": " + broadcastProduct.getCommercialType();
-
     }
 
 }

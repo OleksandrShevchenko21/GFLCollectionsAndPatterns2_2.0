@@ -1,4 +1,4 @@
-
+package model;
 
 import model.modelBroadcastCreator.*;
 
@@ -136,31 +136,10 @@ public class Broadcast implements BroadcastActions {
     public void printList(List<BroadcastProduct> streamList) {
         out.println("-----------------------------------------------------------------");
         for (BroadcastProduct s : streamList) {
-
-            if (s.getBroadcastType() == BroadcastType.SONGS) {
-                out.println(
-                        " Broadcast type" + ":  \t " + s.getBroadcastType() + " \t " +
-                                " Duration" + ": " + s.getDuration() + " \t " +
-                                " Song Name" + ": " + s.getSongName() + " \t " +
-                                " Singer Name" + ": " + s.getSingerName() + " \t " +
-                                " Commercial Type" + ": " + s.getCommercialType());
-            }
-            if ((s.getBroadcastType() == BroadcastType.ADVERTISE)) {
-                out.println(" Broadcast type" + ": " + s.getBroadcastType() + " \t " +
-                        " Duration" + ": " + s.getDuration() + " \t " +
-                        " Advertise Name" + ": " + s.getAdvertiseName() + " \t " +
-                        " Price" + ": " + s.getPrice() + " \t " +
-                        " Commercial Type" + ": " + s.getCommercialType());
-            }
-            if ((s.getBroadcastType() == BroadcastType.INTERVIEW)) {
-                out.println(" Broadcast type" + ": " + s.getBroadcastType() + " \t " +
-                        " Duration" + ": " + s.getDuration() + " \t " +
-                        " Interview guest name" + ": " + s.getInterviewGuestName() + " \t " +
-                        " Price" + ": " + s.getPrice() + " \t " +
-                        " Commercial Type" + ": " + s.getCommercialType());
-            }
+            out.println(s);
         }
         out.println("-----------------------------------------------------------------");
+
     }
 
     @Override

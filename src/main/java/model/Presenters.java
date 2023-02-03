@@ -3,22 +3,18 @@ package model;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import model.modelBroadcastCreator.BroadcastProduct;
-import model.modelBroadcastCreator.BroadcastType;
 import model.modelRadioPresenter.*;
 
 
-import java.io.File;
 import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
 import java.io.PrintWriter;
 import java.util.*;
-import java.util.stream.Collectors;
 
 @Data
 @AllArgsConstructor
 //@NoArgsConstructor
 
-public class RadioPresenterForFilter implements RadioPresenterActions {
+public class Presenters implements RadioPresenterActions {
 
 
     PrintWriter out;
@@ -31,7 +27,7 @@ public class RadioPresenterForFilter implements RadioPresenterActions {
         }
     }
 
-    public RadioPresenterForFilter() throws FileNotFoundException {
+    public Presenters() throws FileNotFoundException {
 
     }
 

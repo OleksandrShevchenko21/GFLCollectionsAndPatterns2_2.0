@@ -1,6 +1,5 @@
-name: 2
-type: INVITED
-resume: a good job for invited person 
+name: 1
+type: STAFF
+experience: 0
 ------LIST of broadcasts----
- Broadcast type: INTERVIEW 	  Duration: 3 	  Interview guest name: 3 	  Price: 30 	  Commercial Type: COMMERCIAL
- Broadcast type: ADVERTISE 	  Duration: 2 	  Advertise Name: 2 	  Price: 5 	  Commercial Type: COMMERCIAL
+ Broadcast type:  	 SONGS 	  Duration: 1 	  Song Name: 1 	  Singer Name: 1 	  Commercial Type: NONCOMMERCIAL

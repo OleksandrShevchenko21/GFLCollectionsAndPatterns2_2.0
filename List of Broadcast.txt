@@ -1,7 +1,4 @@
 -----------------------------------------------------------------
  Broadcast type:  	 SONGS 	  Duration: 1 	  Song Name: 1 	  Singer Name: 1 	  Commercial Type: NONCOMMERCIAL
- Broadcast type: ADVERTISE 	  Duration: 1 	  Advertise Name: 1 	  Price: 5 	  Commercial Type: COMMERCIAL
- Broadcast type: INTERVIEW 	  Duration: 3 	  Interview guest name: 3 	  Price: 30 	  Commercial Type: COMMERCIAL
- Broadcast type: ADVERTISE 	  Duration: 2 	  Advertise Name: 2 	  Price: 5 	  Commercial Type: COMMERCIAL
 -----------------------------------------------------------------
-Total income: 990 euro
+Total income: 0 euro

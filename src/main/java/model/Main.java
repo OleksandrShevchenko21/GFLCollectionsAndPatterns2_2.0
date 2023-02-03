@@ -17,7 +17,7 @@ public class Main {
 //        int fixedStreamTime = Integer.parseInt((new Scanner(System.in).nextLine()));
         Map<RadioPresenter, List<BroadcastProduct>> newHashMap = new HashMap<>();
         Broadcast broadcast = new Broadcast();
-        RadioPresenterForFilter radioPresenterForFilter = new RadioPresenterForFilter();
+        Presenters presenters = new Presenters();
 
 
         List<BroadcastProduct> broadcastStreamList = broadcast.creatingBroadcastList(fixedStreamTime);
@@ -25,11 +25,11 @@ public class Main {
         broadcast.printList(broadcastStreamList);
         broadcast.calculateIncome(broadcastStreamList);
 
-        List<RadioPresenter> presentersList = radioPresenterForFilter.savePresentersList(broadcast.streamList);
+        List<RadioPresenter> presentersList = presenters.savePresentersList(broadcast.streamList);
 
-        newHashMap = radioPresenterForFilter.hashMapCreating(presentersList, broadcastStreamList);
+        newHashMap = presenters.hashMapCreating(presentersList, broadcastStreamList);
 
-        radioPresenterForFilter.printPresentersList(broadcastStreamList);
+        presenters.printPresentersList(broadcastStreamList);
 
 
     }

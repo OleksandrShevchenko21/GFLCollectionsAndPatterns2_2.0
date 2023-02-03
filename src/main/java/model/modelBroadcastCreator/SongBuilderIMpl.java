@@ -71,7 +71,6 @@ public class SongBuilderIMpl implements BroadcastProductBuilder {
 //        broadcastProduct.setRadioPresenterNameBroadcast(new Scanner(System.in).nextLine());
         return this;
     }
-
     @Override
     public BroadcastProduct build() {
         return broadcastProduct;

@@ -7,7 +7,6 @@ public interface RadioPresenterBuilder {
     RadioPresenterBuilder setExperience();
     RadioPresenterBuilder setResume();
 
-
     RadioPresenter build();
 
 }

@@ -19,6 +19,5 @@ public interface BroadcastProductBuilder {
     BroadcastProduct build();
 
 
-
 }
 

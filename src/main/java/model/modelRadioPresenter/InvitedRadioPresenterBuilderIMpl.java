@@ -11,9 +11,7 @@ import java.util.Scanner;
 @NoArgsConstructor
 public class InvitedRadioPresenterBuilderIMpl implements RadioPresenterBuilder {
 
-
     RadioPresenter radioPresenter = new RadioPresenter();
-
 
     @Override
     public RadioPresenterBuilder setRadioPresenterName() {

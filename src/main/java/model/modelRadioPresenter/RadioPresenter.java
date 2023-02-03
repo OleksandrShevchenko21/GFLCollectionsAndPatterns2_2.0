@@ -13,4 +13,5 @@ public class RadioPresenter {
 
     private int experience;
     private String resume;
+
 }

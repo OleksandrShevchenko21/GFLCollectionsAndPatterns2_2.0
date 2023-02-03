@@ -19,7 +19,6 @@ public class Main {
         RadioPresenterForFilter radioPresenterForFilter = new RadioPresenterForFilter();
 
 
-
         broadcast.creatingBroadcastList(fixedStreamTime);
         broadcast.printList(broadcast.streamList);
         broadcast.calculateIncome();

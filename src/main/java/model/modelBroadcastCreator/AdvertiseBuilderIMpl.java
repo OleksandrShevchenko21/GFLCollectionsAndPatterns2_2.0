@@ -1,7 +1,6 @@
 package model.modelBroadcastCreator;
 
 import lombok.*;
-
 import java.util.Scanner;
 
 @Getter

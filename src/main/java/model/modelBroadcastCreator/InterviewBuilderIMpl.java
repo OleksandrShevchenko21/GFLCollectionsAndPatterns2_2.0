@@ -63,7 +63,6 @@ public class InterviewBuilderIMpl implements BroadcastProductBuilder {
         broadcastProduct.setCommercialType(CommercialType.COMMERCIAL);
         return this;
     }
-
 @Override
 public BroadcastProductBuilder setRadioPresenter() {
     System.out.println("Enter radio presenter name: ");

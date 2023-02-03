@@ -1,7 +1,6 @@
 package model.modelBroadcastCreator;
 
 
-
 import java.util.List;
 
 public interface BroadcastActions {

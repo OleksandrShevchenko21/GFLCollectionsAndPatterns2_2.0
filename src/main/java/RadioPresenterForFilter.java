@@ -120,7 +120,6 @@ public class RadioPresenterForFilter implements RadioPresenterActions {
             return newHashMap;
     }
 
-
     @Override
     public void printPresentersList
             (List<BroadcastProduct> streamList) {

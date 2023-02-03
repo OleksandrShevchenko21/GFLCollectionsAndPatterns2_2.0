@@ -1,5 +1,0 @@
-name: 1
-type: INVITED
-resume: a good job for invited person 
-------LIST of broadcasts----
- Broadcast type:  	 SONGS 	  Duration: 1 	  Song Name: 1 	  Singer Name: 1 	  Commercial Type: NONCOMMERCIAL

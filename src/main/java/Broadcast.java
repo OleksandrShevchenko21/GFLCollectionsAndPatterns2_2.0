@@ -29,8 +29,9 @@ public class Broadcast implements BroadcastActions {
     }
 
     @Override
-    public void creatingBroadcastList(int fixedStreamTime) {
+    public List<BroadcastProduct> creatingBroadcastList(int fixedStreamTime) {
 
+    List<BroadcastProduct> streamList = new ArrayList<>();
         String broadcastType = "0";
         String exit = "exit";
 
@@ -128,6 +129,7 @@ public class Broadcast implements BroadcastActions {
                     break;
             }
         }
+        return streamList;
     }
 
     @Override
@@ -172,7 +174,7 @@ public class Broadcast implements BroadcastActions {
     }
 
     @Override
-    public void calculateIncome() {
+    public void calculateIncome(List<BroadcastProduct> streamList) {
 
         int currentIncome = 0;
 

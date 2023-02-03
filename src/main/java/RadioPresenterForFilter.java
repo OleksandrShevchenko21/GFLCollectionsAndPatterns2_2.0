@@ -115,6 +115,11 @@ public class RadioPresenterForFilter implements RadioPresenterActions {
 
                 }
                 newHashMap.putAll(hashMap);
+
+                }
+                System.out.println("HashMap: " + newHashMap);
+                for (Map.Entry entry : newHashMap.entrySet()) {
+                    System.out.println(entry.getKey() + " " + entry.getValue());
             }
 
             return newHashMap;

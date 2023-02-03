@@ -19,14 +19,17 @@ public class Main {
         RadioPresenterForFilter radioPresenterForFilter = new RadioPresenterForFilter();
 
 
-        broadcast.creatingBroadcastList(fixedStreamTime);
-        broadcast.printList(broadcast.streamList);
-        broadcast.calculateIncome();
+        List<BroadcastProduct> broadcastStreamList = broadcast.creatingBroadcastList(fixedStreamTime);
 
-//        radioPresenterForFilter.savePresentersList(broadcast.streamList);
-//      newHashMap = radioPresenterForFilter.hashMapCreating(radioPresenterForFilter.savePresentersList(broadcast.streamList),broadcast.streamList);
+        broadcast.printList(broadcastStreamList);
+        broadcast.calculateIncome(broadcastStreamList);
 
-        radioPresenterForFilter.printPresentersList(  broadcast.streamList);
+        List<RadioPresenter> presentersList = radioPresenterForFilter.savePresentersList(broadcast.streamList);
+
+//        RadioPresenterForFilter presenterList = radioPresenterForFilter.savePresentersList(broadcast.streamList);
+      newHashMap = radioPresenterForFilter.hashMapCreating(presentersList,broadcastStreamList);
+
+//        radioPresenterForFilter.printPresentersList(  broadcast.streamList);
 
 
 

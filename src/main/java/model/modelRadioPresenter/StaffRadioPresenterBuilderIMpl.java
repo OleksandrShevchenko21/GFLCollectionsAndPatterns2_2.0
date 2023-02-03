@@ -17,8 +17,8 @@ public class StaffRadioPresenterBuilderIMpl implements RadioPresenterBuilder{
     @Override
     public RadioPresenterBuilder setRadioPresenterName() {
         System.out.println("Enter a name of Radio Presenter: ");
-//        radioPresenter.setRadioPresenterName(new Scanner(System.in).nextLine());
-        radioPresenter.setRadioPresenterName("John");
+        radioPresenter.setRadioPresenterName(new Scanner(System.in).nextLine());
+//        radioPresenter.setRadioPresenterName("John");
         return this;
 
 
@@ -32,8 +32,8 @@ public class StaffRadioPresenterBuilderIMpl implements RadioPresenterBuilder{
     @Override
     public RadioPresenterBuilder setExperience() {
         System.out.println("Enter an experience: ");
-//        radioPresenter.setExperience(Integer.parseInt(new Scanner(System.in).nextLine()));
-        radioPresenter.setExperience(2);
+        radioPresenter.setExperience(Integer.parseInt(new Scanner(System.in).nextLine()));
+//        radioPresenter.setExperience(2);
         return this;
     }
 

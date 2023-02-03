@@ -20,8 +20,8 @@ public class SongBuilderIMpl implements BroadcastProductBuilder {
     @Override
     public BroadcastProductBuilder setDuration() {
         System.out.println("Enter duration in minutes: ");
-//        broadcastProduct.setDuration(Integer.parseInt(new Scanner(System.in).nextLine()));
-        broadcastProduct.setDuration(1);
+        broadcastProduct.setDuration(Integer.parseInt(new Scanner(System.in).nextLine()));
+//        broadcastProduct.setDuration(1);
         return this;
     }
 
@@ -29,16 +29,16 @@ public class SongBuilderIMpl implements BroadcastProductBuilder {
     @Override
     public BroadcastProductBuilder setSingerName() {
         System.out.println("Enter singer: ");
-//        broadcastProduct.setSingerName(new Scanner(System.in).nextLine());
-        broadcastProduct.setSingerName("SINGER");
+        broadcastProduct.setSingerName(new Scanner(System.in).nextLine());
+//        broadcastProduct.setSingerName("SINGER");
         return this;
     }
 
     @Override
     public BroadcastProductBuilder setSongName() {
         System.out.println("Enter song: ");
-//        broadcastProduct.setSongName(new Scanner(System.in).nextLine());
-        broadcastProduct.setSongName("SONG");
+        broadcastProduct.setSongName(new Scanner(System.in).nextLine());
+//        broadcastProduct.setSongName("SONG");
         return this;
     }
 
@@ -67,8 +67,8 @@ public class SongBuilderIMpl implements BroadcastProductBuilder {
     @Override
     public BroadcastProductBuilder setRadioPresenter() {
         System.out.println("Enter radio presenter name:  ");
-        broadcastProduct.setRadioPresenterNameBroadcast("John");
-//        broadcastProduct.setRadioPresenterNameBroadcast(new Scanner(System.in).nextLine());
+//        broadcastProduct.setRadioPresenterNameBroadcast("John");
+        broadcastProduct.setRadioPresenterNameBroadcast(new Scanner(System.in).nextLine());
         return this;
     }
     @Override

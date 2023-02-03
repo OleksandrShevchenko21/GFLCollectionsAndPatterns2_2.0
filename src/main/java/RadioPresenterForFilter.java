@@ -19,8 +19,6 @@ import java.util.stream.Collectors;
 public class RadioPresenterForFilter implements RadioPresenterActions {
 
 
-
-
     PrintWriter out;
 
     {
@@ -48,7 +46,7 @@ public class RadioPresenterForFilter implements RadioPresenterActions {
         String radioPresenterType = "0";
         String exit = "exit";
 
-        System.out.println("Add a type of Radio Presenter for filter");
+        System.out.println("Add a type of Radio Presenter ");
         while (exit != radioPresenterType) {
 
             System.out.println(" 1 to choose STAFF radio presenter, 2 to choose INVITED radio presenter");
@@ -92,37 +90,37 @@ public class RadioPresenterForFilter implements RadioPresenterActions {
     public Map<RadioPresenter, List<BroadcastProduct>> hashMapCreating
             (List<RadioPresenter> presenterList, List<BroadcastProduct> streamList) {
 
-            List<BroadcastProduct> newStreamList = new ArrayList<>();
+        List<BroadcastProduct> newStreamList = new ArrayList<>();
 
-            Map<RadioPresenter, List<BroadcastProduct>> newHashMap = new HashMap<>();
+        Map<RadioPresenter, List<BroadcastProduct>> newHashMap = new HashMap<>();
 
-            for (RadioPresenter r : presenterList) {
-                Map<RadioPresenter, List<BroadcastProduct>> hashMap = new HashMap<>();
-                if (r.getRadioPresenterType() == RadioPresenterType.STAFF) {
+        for (RadioPresenter r : presenterList) {
+            Map<RadioPresenter, List<BroadcastProduct>> hashMap = new HashMap<>();
+            if (r.getRadioPresenterType() == RadioPresenterType.STAFF) {
 
-                    List<BroadcastProduct> streamList1 = new ArrayList<>();
+                List<BroadcastProduct> streamList1 = new ArrayList<>();
 
-                    for (BroadcastProduct s : streamList) {
-                        if (s.getRadioPresenterNameBroadcast().equals(r.getRadioPresenterName())) {
+                for (BroadcastProduct s : streamList) {
+                    if (s.getRadioPresenterNameBroadcast().equals(r.getRadioPresenterName())) {
 
-                            streamList1.add(s);
-                        }
+                        streamList1.add(s);
                     }
-                    newStreamList = streamList1;
-                    hashMap.put(r, newStreamList);
-                } else {
-                    hashMap.put(r, null);
-
                 }
-                newHashMap.putAll(hashMap);
+                newStreamList = streamList1;
+                hashMap.put(r, newStreamList);
+            } else {
+                hashMap.put(r, null);
 
-                }
-                System.out.println("HashMap: " + newHashMap);
-                for (Map.Entry entry : newHashMap.entrySet()) {
-                    System.out.println(entry.getKey() + " " + entry.getValue());
             }
+            newHashMap.putAll(hashMap);
 
-            return newHashMap;
+        }
+        System.out.println("HashMap: " + newHashMap);
+        for (Map.Entry entry : newHashMap.entrySet()) {
+            System.out.println(entry.getKey() + " " + entry.getValue());
+        }
+
+        return newHashMap;
     }
 
     @Override
@@ -134,7 +132,7 @@ public class RadioPresenterForFilter implements RadioPresenterActions {
         String radioPresenterType = "0";
         String exit = "exit";
 
-        System.out.println("Add a type of Radio Presenter for filter");
+        System.out.println("Enter a Radio Presenter to show in file");
         while (exit != radioPresenterType) {
 
             System.out.println(" 1 to choose STAFF radio presenter, 2 to choose INVITED radio presenter");
@@ -232,6 +230,10 @@ public class RadioPresenterForFilter implements RadioPresenterActions {
                                     " Commercial Type" + ": " + s.getCommercialType());
                         }
                     }
+                    radioPresenterType = "exit";
+                    break;
+
+                case "0":
                     radioPresenterType = "exit";
                     break;
             }

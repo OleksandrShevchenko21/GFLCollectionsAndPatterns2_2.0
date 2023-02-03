@@ -6,14 +6,15 @@ import java.io.FileNotFoundException;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) throws FileNotFoundException {
 
 
         System.out.println("Enter the duration of broadcast");
-        int fixedStreamTime = 100;
-//        int fixedStreamTime = Integer.parseInt((new Scanner(System.in).nextLine()));
+//        int fixedStreamTime = 100;
+        int fixedStreamTime = Integer.parseInt((new Scanner(System.in).nextLine()));
         Map<RadioPresenter, List<BroadcastProduct>> newHashMap = new HashMap<>();
         Broadcast broadcast = new Broadcast();
         RadioPresenterForFilter radioPresenterForFilter = new RadioPresenterForFilter();
@@ -26,11 +27,9 @@ public class Main {
 
         List<RadioPresenter> presentersList = radioPresenterForFilter.savePresentersList(broadcast.streamList);
 
-//        RadioPresenterForFilter presenterList = radioPresenterForFilter.savePresentersList(broadcast.streamList);
-      newHashMap = radioPresenterForFilter.hashMapCreating(presentersList,broadcastStreamList);
+        newHashMap = radioPresenterForFilter.hashMapCreating(presentersList, broadcastStreamList);
 
-//        radioPresenterForFilter.printPresentersList(  broadcast.streamList);
-
+        radioPresenterForFilter.printPresentersList(broadcastStreamList);
 
 
     }

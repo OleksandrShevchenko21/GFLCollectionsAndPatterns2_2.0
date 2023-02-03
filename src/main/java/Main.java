@@ -24,6 +24,7 @@ public class Main {
         broadcast.printList(broadcast.streamList);
         broadcast.calculateIncome();
 
+
 //        radioPresenterForFilter.savePresentersList(broadcast.streamList);
 //      newHashMap = radioPresenterForFilter.hashMapCreating(radioPresenterForFilter.savePresentersList(broadcast.streamList),broadcast.streamList);
 

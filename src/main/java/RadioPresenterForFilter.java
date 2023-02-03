@@ -91,35 +91,33 @@ public class RadioPresenterForFilter implements RadioPresenterActions {
     @Override
     public Map<RadioPresenter, List<BroadcastProduct>> hashMapCreating
             (List<RadioPresenter> presenterList, List<BroadcastProduct> streamList) {
-//
-//            List<BroadcastProduct> newStreamList = new ArrayList<>();
-//
-//            Map<RadioPresenter, List<BroadcastProduct>> newHashMap = new HashMap<>();
-//
-//            for (RadioPresenter r : presenterList) {
-//                Map<RadioPresenter, List<BroadcastProduct>> hashMap = new HashMap<>();
-//                if (r.getRadioPresenterType() == RadioPresenterType.STAFF) {
-//
-//                    List<BroadcastProduct> streamList1 = new ArrayList<>();
-//
-//                    for (BroadcastProduct s : streamList) {
-//                        if (s.getRadioPresenterNameBroadcast().equals(r.getRadioPresenterName())) {
-//
-//                            streamList1.add(s);
-//                        }
-//                    }
-//                    newStreamList = streamList1;
-//                    hashMap.put(r, newStreamList);
-//                } else {
-//                    hashMap.put(r, null);
-//
-//                }
-//                newHashMap.putAll(hashMap);
-//            }
 
-        return null;
+            List<BroadcastProduct> newStreamList = new ArrayList<>();
 
-//            return newHashMap;
+            Map<RadioPresenter, List<BroadcastProduct>> newHashMap = new HashMap<>();
+
+            for (RadioPresenter r : presenterList) {
+                Map<RadioPresenter, List<BroadcastProduct>> hashMap = new HashMap<>();
+                if (r.getRadioPresenterType() == RadioPresenterType.STAFF) {
+
+                    List<BroadcastProduct> streamList1 = new ArrayList<>();
+
+                    for (BroadcastProduct s : streamList) {
+                        if (s.getRadioPresenterNameBroadcast().equals(r.getRadioPresenterName())) {
+
+                            streamList1.add(s);
+                        }
+                    }
+                    newStreamList = streamList1;
+                    hashMap.put(r, newStreamList);
+                } else {
+                    hashMap.put(r, null);
+
+                }
+                newHashMap.putAll(hashMap);
+            }
+
+            return newHashMap;
     }
 
 
